@@ -147,3 +147,9 @@ body {
     grid-template-columns: 1fr;
   }
 }
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
