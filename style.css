@@ -1,155 +1,34 @@
-* { box-sizing: border-box; }
-body { 
-  margin: 0; 
-  font-family: Arial, sans-serif; 
-  background: #000;
-  color: #f5d742;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* HEADER */
-.header {
-  padding: 16px;
-  border-bottom: 2px solid #f5d742;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #111;
-}
-
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-  color: #f5d742;
-}
-
-.nav a {
-  margin-left: 12px;
-  text-decoration: none;
-  color: #f5d742;
-  font-weight: bold;
-}
-
-.nav a:hover {
-  color: white;
-}
-
-/* CONTAINER */
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
-/* HERO */
-.hero {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 0;
-  gap: 20px;
-}
-
-.hero-text {
-  flex: 1;
-}
-
-.hero-card {
-  width: 240px;
-  padding: 16px;
-  border: 2px solid #f5d742;
-  background: #111;
-  text-align: center;
-}
-
-/* BUTTON */
-.btn {
-  display: inline-block;
-  padding: 10px 14px;
-  border: 2px solid #f5d742;
-  color: #f5d742;
-  text-decoration: none;
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-.btn:hover {
-  background: #f5d742;
-  color: black;
-}
-
-/* GRID */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-  padding: 20px 0;
-}
-
-.card {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border: 2px solid #f5d742;
-  transition: transform 0.2s, border-color 0.2s;
-}
-
-.card:hover {
-  transform: scale(1.03);
-  border-color: white;
-}
-
-/* INFO SECTION */
-.info {
-  padding: 20px 0;
-}
-
-.info h2, .info h3 {
-  color: #f5d742;
-}
-
-/* FOOTER */
-.footer {
-  padding: 16px;
-  text-align: center;
-  border-top: 2px solid #f5d742;
-  background: #111;
-}
-
-/* RESPONSIVE BREAKPOINTS */
-
-/* Tablet: 2 columns */
-@media (max-width: 900px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Mobile: 1 column + stacked hero + centered nav */
-@media (max-width: 600px) {
-
-  .nav {
-    display: flex;
-    flex-direction: column;
+header, footer {
+    background-color: #222;
+    color: white;
     text-align: center;
-    gap: 8px;
-    margin-top: 10px;
-  }
-
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-card {
-    width: 100%;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-  }
+    padding: 15px;
 }
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.gallery-section {
+    text-align: center;
+    padding: 20px;
+}
+
 .responsive-image {
     max-width: 100%;
     height: auto;
-    display: block;
-    margin: 20px auto;
+    margin-top: 20px;
+}
+
+.caption {
+    margin-top: 15px;
+    font-size: 1rem;
 }
